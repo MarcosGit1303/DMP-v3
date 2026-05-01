@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "vercel-build": "vite build"
   },
   "dependencies": {
     "@cloudflare/vite-plugin": "^1.25.5",
@@ -86,5 +87,8 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.56.1",
     "vite": "^7.3.1"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
